@@ -6,7 +6,7 @@ spec:
   replicas: 4
   selector:
     matchExpressions:
-      - {key: app, operator: IN, values: [firstpod]}
+      - {key: app, operator: IN, values: [firstapp]}
   template:
     metadata: 
      name: firstpod
