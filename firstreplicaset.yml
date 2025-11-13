@@ -7,19 +7,19 @@ spec:
   selector:
     matchExpressions:
       - {key: app, operator: IN, values: [firstpod]}
-template:
-  metadata: 
-    name: firstpod
+  template:
+    metadata: 
+     name: firstpod
     labels:
       app: firstapp
-  spec:
-    containers:
-      - name: firstcontainer
-        image: nginx
-        ports:
-          - containerPort: 80
+    spec:
+      containers:
+        - name: firstcontainer
+          image: nginx
+          ports:
+            - containerPort: 80
 
-      - name: secondcontsiner
-        image: httpd
-        ports:
-          - containerPort: 80
+        - name: secondcontsiner
+          image: httpd
+          ports:
+            - containerPort: 80
