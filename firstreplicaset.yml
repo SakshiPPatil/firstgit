@@ -14,12 +14,7 @@ spec:
       app: firstapp
     spec:
       containers:
-        - name: firstcontainer
-          image: nginx
-          ports:
-            - containerPort: 80
-
         - name: secondcontsiner
           image: httpd
           ports:
-            - containerPort: 8080
+            - containerPort: 80
