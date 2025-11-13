@@ -10,7 +10,7 @@ spec:
   template:
     metadata: 
      name: firstpod
-    labels:
+     labels:
       app: firstapp
     spec:
       containers:
