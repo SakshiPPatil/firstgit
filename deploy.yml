@@ -13,13 +13,13 @@ spec:
     matchLabels: 
       app: firstapp
   template:
-      metadata:
-        name: firstpod
-        labels:
-          app: firstapp
-        spec:
-          containers:
-            name: firstcontainer
-            image: nginx
-            ports:
-              - containerPort: 80
+    metadata:
+      name: firstpod
+      labels:
+        app: firstapp
+    spec:
+      containers:
+        name: firstcontainer
+        image: nginx
+        ports:
+          - containerPort: 80
