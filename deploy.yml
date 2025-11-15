@@ -7,20 +7,19 @@ spec:
   strategy:
     type: RollingUpdate
     rollingupdate:
-      maxUrge: 2
+      maxSurge: 2
       maxUnavailable: 1
   selector:
     matchLabels: 
       app: firstapp
-
   template:
-    metadata:
-      name: firstpod
-      labels:
-        app: firstapp
-      spec:
-        containers:
-          name: firstcontainer
-          image: nginx
-          ports:
-            - containerPort: 80
+      metadata:
+        name: firstpod
+        labels:
+          app: firstapp
+        spec:
+          containers:
+            name: firstcontainer
+            image: nginx
+            ports:
+              - containerPort: 80
